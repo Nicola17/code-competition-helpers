@@ -20,7 +20,12 @@ namespace CoCoHe{
 		static void writeOutput(Stream& stream, Output& output){ stream << "- - - -";}
 	};
 	
-	
+	class MulticaseSolverPolicyConcept{
+		template <class Stream>
+		static int getNofTestCase(Stream& stream){return 0;}
+		template <class Stream>
+		static void writeDecoratedOutput(Stream& stream, const std::string& str, int testCase){}
+	};
 
 }
 
