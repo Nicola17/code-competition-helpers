@@ -11,6 +11,8 @@ namespace CoCoHe{
 		static int getNofTestCase(Stream& stream){
 			int res(0);
 			stream >> res;
+			char e;
+			stream.get(e);
 			return res;
 		}
 		
